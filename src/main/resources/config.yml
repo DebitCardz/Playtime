@@ -1,0 +1,11 @@
+server:
+  # Ignore this if you're only running this
+  # on one server, otherwise make it the server type.
+  name: Survival
+
+datastore:
+  # Options: Mongo, JSON.
+  type: JSON
+
+  connection_string: "mongodb://localhost:27017"
+  database: "playtime"

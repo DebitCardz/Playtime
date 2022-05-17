@@ -1,0 +1,51 @@
+core:
+  invalid_permissions: "&cSorry! You're lacking the required permissions to execute this command."
+
+commands:
+  playtime:
+    invalid_player: "&cSorry! &e{target}&c, isn't a valid player."
+    console_message: |-
+      &f{player}&e's playtime:
+      &eTotal: &f{total_playtime}&e.
+      &ePlaytime on &f{server}&e: &f{playtime}&e.
+
+menus:
+  playtime:
+    title: "Playtime"
+    display:
+      exit:
+        title: "&cExit"
+
+      total:
+        title: "&eTotal Statistics"
+        lore_self: |-
+          &7You've played for &d{total_time}&7.
+          &7And first joined us at &f{first_join}&7.
+        lore_other: |-
+          &f{player} &7has played for &d{total_time}&7.
+          &7They first joined us at &f{first_join}&7
+
+      servers:
+        title: "&eServers"
+        lore_self: |-
+          &7Check your playtime on
+          &f{servers} &7other {word}.
+        lore_other: |-
+          &7Check &f{player}&7's &7playtime on
+          &f{servers} &7other {word}.
+  servers:
+    title: "Servers"
+    display:
+      exit:
+        title: "&cExit"
+      previous:
+        title: "&dPrevious Page: &f{previous_page}&d."
+      next:
+        title: "&dNext Page: &f{next_page}&d."
+
+      server:
+        title: "&e{server}"
+        lore_self: |-
+          &7You've played for &f{playtime}&7.
+        lore_other: |-
+          &f{player} &7has played for &f{playtime}&7.

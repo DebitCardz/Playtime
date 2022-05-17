@@ -1,0 +1,6 @@
+name: Playtime
+version: 1.0.0
+main: me.tech.playtime.Playtime
+description: A plugin to calculate server & global playtime.
+author: Tech
+api-version: 1.18
