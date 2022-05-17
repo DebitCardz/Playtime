@@ -52,7 +52,7 @@ class PlaytimeCommand(
 
 		if(target == null) {
 			messages.send(sender, "commands.playtime.invalid_player", listOf(
-				Pair("target", args[0])
+				Pair("target", args.getOrElse(0) { "Undefined" })
 			))
 			return true
 		}
